@@ -22,6 +22,7 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
 .Paragraph {
   font-size: larger;
   width: 600px;
@@ -33,6 +34,9 @@
 }
 .h3 {
   font-size: larger;
+}
+.list {
+  line-height: 1.4;
 }
 .header {
   background-color: #121212;
@@ -65,14 +69,21 @@
   color: white;
 }
 .blogContentPhoto {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   margin: 30px;
   padding: 10px;
   border-radius: 10px;
   background-color: #212121;
 }
-
+.photoExample {
+  width: 800px;
+  height: auto;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #212121;
+}
 .BlogContent {
   padding: 10px;
   background-color: #212121;
@@ -124,6 +135,26 @@
   margin: 5px 5px;
   transition-duration: 0.4s;
   cursor: pointer;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.colorbutton {
+  border: none;
+  border-radius: 15px;
+  color: white;
+  background-color: #121212;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 5px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Libre Franklin', sans-serif;
+}
+.colorButton2 {
+  color: black;
+  background-color: #1db954;
 }
 .blogButton {
   background-color: #212121;
@@ -165,6 +196,7 @@ a:visited {
 }
 .navList {
   list-style: none;
+  padding: 0px 0px 0px 5px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -196,4 +228,100 @@ a:visited {
   .BlogAbout {
     margin-top: 10px;
   }
+}
+code[class*='language-'],
+pre[class*='language-'] {
+  color: #ccc;
+  background: 0 0;
+  font-family: 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 0.7em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 1;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+pre[class*='language-'] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
+  background: #121212;
+}
+:not(pre) > code[class*='language-'] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+.token.block-comment,
+.token.cdata,
+.token.comment,
+.token.doctype,
+.token.prolog {
+  color: #999;
+}
+.token.punctuation {
+  color: #ccc;
+}
+.token.attr-name,
+.token.deleted,
+.token.namespace,
+.token.tag {
+  color: #e2777a;
+}
+.token.function-name {
+  color: #6196cc;
+}
+.token.boolean,
+.token.function,
+.token.number {
+  color: #f08d49;
+}
+.token.class-name,
+.token.constant,
+.token.property,
+.token.symbol {
+  color: #f8c555;
+}
+.token.atrule,
+.token.builtin,
+.token.important,
+.token.keyword,
+.token.selector {
+  color: #cc99cd;
+}
+.token.attr-value,
+.token.char,
+.token.regex,
+.token.string,
+.token.variable {
+  color: #7ec699;
+}
+.token.entity,
+.token.operator,
+.token.url {
+  color: #67cdcc;
+}
+.token.bold,
+.token.important {
+  font-weight: 700;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+.token.inserted {
+  color: green;
 }
